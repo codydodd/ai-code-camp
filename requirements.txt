@@ -1,0 +1,17 @@
+# sentiment analysisw
+vaderSentiment
+
+# deep learning
+numpy
+pandas
+tensorflow
+
+# lemmatization
+https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.7.1/en_core_web_md-3.7.1.tar.gz#egg=en_core_web_md
+
+# image recongition
+opencv-python
+
+# speech to text
+openai-whisper
+ffmpeg  # for mac, go download 'brew' for mac, then run: `brew update` and `brew install ffmpeg`
