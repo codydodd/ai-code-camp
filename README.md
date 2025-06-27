@@ -2,6 +2,8 @@
 
 * As of 2025 this camp is optimized for python3.12
 
+Making a change!
+
 ## Introduction
 
 This repository supports the AI Code Camp developed by Dr. Cody Dodd.
