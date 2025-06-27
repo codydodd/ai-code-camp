@@ -1,5 +1,7 @@
 # ai-code-camp
 
+* As of 2025 this camp is optimized for python3.12
+
 ## Introduction
 
 This repository supports the AI Code Camp developed by Dr. Cody Dodd.
@@ -63,4 +65,14 @@ You will see something like this in the terminal:
 Check which version of python you are using. 
 
 `python --version`
+
+Installing packages - The recommended way:
+
+First, add your packages to a file called requirements.txt, then run in the terminal `pip install -r requirements.txt`
+
+Installing packages - the less optimal way:
+
+Without a requirements.txt you can install packages directly using `pip install <package name>`, but this makes it hard to remember what packages you have and even harder if you want to share your project.
+
+
 
