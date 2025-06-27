@@ -1,5 +1,3 @@
-# https://office.pigeonline.io/sh/X54
-
 import cv2
 
 # Load the image
