@@ -1,5 +1,7 @@
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
+## Simple using old tech
+
 analyzer = SentimentIntensityAnalyzer() 
 
 # Try to replace the sentence with the words.text
@@ -12,5 +14,3 @@ def print_sentiment_scores(sentence):
     #print(snt['compound'])
 # Test it with an example
 print_sentiment_scores("I dunno it was fine I guess")
-
-

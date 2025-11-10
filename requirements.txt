@@ -1,17 +1,56 @@
-# sentiment analysisw
-vaderSentiment
+# ESDC-Variant
 
-# deep learning
+# The following packages were pruned and selected for ESDC use-cases and given the plugin limitations within the ESDC ecosystem.
+
+# pip is a powerful tool for safely installing python packages. Normally Anaconda has what we need, but for some advanced work, we need to install directly (using pip). We can do so using this requirements.txt to keep everything neat.
+
+# PLEASE READ:
+# 1) Add 'pip' to Anaconda from the Navigator to directly install the below. 
+# 2) Running pip install -r "requirements.txt" is the equivelant of individually running: `pip install <name>`. 
+# For example, `opencv-python` as a blank line inside a file run as `pip install -r "requirements.txt"` is the same as running `pip install opencv-python` directly in the terminal
+# 3) Before running pip install, make sure your Conda environment is on. e.g, test with `conda list` to view installed packages.
+
+
+
+# Image recognition
+# -----------------
+opencv-python 
+# You may need to remove previous installations: conda remove opencv
+
+
+# Deep learning
+# -----------------
 numpy
 pandas
 tensorflow
 
-# lemmatization
+
+# Lemmatization
+# -----------------
+spacy
 https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.7.1/en_core_web_md-3.7.1.tar.gz#egg=en_core_web_md
 
-# image recongition
-opencv-python
 
-# speech to text
+# Sentiment analysis
+# -----------------
+#vaderSentiment  # OLD-FASHIONED -  <--- This does not always work, instead try: conda install -c conda-forge vadersentiment
+
+
+# PII removal
+# -----------------
+presidio-analyzer
+presidio-anonymizer
+# Note it uses spacy's en-core-web-lg-3.8.0
+
+
+# Speech-to-text
+# -----------------
 openai-whisper
-ffmpeg  # for mac, go download 'brew' for mac, then run: `brew update` and `brew install ffmpeg`
+# ffmpeg # <--- This does not always work, instead try: conda install -c conda-forge ffmpeg
+
+
+# Time series
+# -----------------
+matplotlib
+scipy
+# Should also already have numpy and pandas
