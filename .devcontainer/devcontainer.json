@@ -1,0 +1,15 @@
+{
+    "name": "Python 3.12 Environment",
+    "image": "mcr.microsoft.com/devcontainers/python:3.12",
+    "settings": {
+      "python.pythonPath": "/usr/local/bin/python",
+      "python.formatting.provider": "black"
+    },
+    "extensions": [
+      "ms-python.python",
+      "ms-toolsai.jupyter",
+      "ms-python.black-formatter"
+    ],
+    "postCreateCommand": "pip install -r requirements.txt"
+  }
+  
