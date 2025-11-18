@@ -1,7 +1,7 @@
 import cv2
 
 # Load the image
-image_path = "cat.jpg"
+image_path = "cats2.jpg"
 image = cv2.imread(image_path)
 
 # Load the Haar cascade for cat face detection

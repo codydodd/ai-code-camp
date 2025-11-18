@@ -14,7 +14,7 @@
 
 # Image recognition
 # -----------------
-opencv-python 
+opencv-python
 # You may need to remove previous installations: conda remove opencv
 
 

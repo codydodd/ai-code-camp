@@ -21,7 +21,7 @@ model.add(Dense(1, activation='sigmoid'))
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 # fit the keras model on the dataset
-model.fit(X, y, epochs=150, batch_size=10)
+model.fit(X, y, epochs=1000, batch_size=10)
 
 # evaluate the keras model
 _, accuracy = model.evaluate(X, y)
@@ -31,7 +31,7 @@ print('Accuracy: %.2f' % (accuracy*100))
 
 
 # now make a prediction
-print("Now making a predicction")
+print("Now making a prediction")
 
 # make probability predictions with the model
 predictions = model.predict(X)
