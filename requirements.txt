@@ -1,13 +1,16 @@
-# sentiment analysisw
-vaderSentiment
-
 # deep learning
-numpy
-pandas
-tensorflow
+numpy==1.26.4
+pandas==2.2.2
+tensorflow==2.16.1
+scikit-learn==1.5.0
+openpyxl==3.1.2
+spacy==3.7.2
 
 # lemmatization
+spacy==3.7.2
 https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.7.1/en_core_web_md-3.7.1.tar.gz#egg=en_core_web_md
+# Sentiment
+vaderSentiment
 
 # image recongition
 opencv-python
@@ -15,3 +18,10 @@ opencv-python
 # speech to text
 openai-whisper
 ffmpeg  # for mac, go download 'brew' for mac, then run: `brew update` and `brew install ffmpeg`
+
+#matplotlib==3.9.0
+
+
+
+
+

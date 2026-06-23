@@ -1,78 +1,179 @@
-# ai-code-camp
+# AI Code Camp — Practical Skills for Research Professionals (LSE MISDI 2026)
 
-* As of 2025 this camp is optimized for python3.12
+* As of 2026 this camp is optimized for python3.12
 
 ## Introduction
 
-This repository supports the AI Code Camp developed by Dr. Cody Dodd.
+Welcome to the AI Code Camp!
 
-The code camp covers AI as a practice, including an introduction to AI, Python, accessing AI packages, working with data, and related issues with risk and ethics. 
+This 3‑day intensive is a hands‑on, modern introduction to AI systems, from classic deterministic models to generative transformers. As well as how to combine them into real, reliable solutions.
 
-Participants will gain a solid understand of AI concepts, but more importantly, will leave the camp able to set up development environments, run code and work with AI packages. 
+This is not a programming course and not a theory course.
 
-Participants will also develop skills to address data-related challenges when using AI, with a focus on human-centricity.
+You will experiment, break things, debug, and build, while picking up critical skills used in real research and public‑sector AI work.
 
-This is not really a programming course. If you already know how to program, you will gain insights around new AI tools and packages. If you do not know how to program, this course will leave you with a good understanding of the technology behind AI.
+## What You’ll Learn
 
-## Modules
+By the end of the camp, you will be able to:
 
-### Module 1
+- Configure and run AI through Python scripts
 
-Core tools of the craft. In some ways this is the hardest module as we have to successfully install VSCode, as well as set up virtual evnironments. 
+- Understand how Python logic translates into agentic workflows
 
-Hint: Every machine is different and this can take some time. But it is very worth it! When done, you can begin building your own AI tools without risk of making your computer messy with files and packages. 
+- Explain why Python still matters (grounding, reproducibility, auditability)
 
-### Module 2
+- Describe the difference between deterministic AI, machine learning, and generative AI
 
-Python. We'll learn about basic code (variables and functions), packages, and how to import and use third party packages.
+- Compare deterministic vs generative systems — and know when to use each
 
-### Module 3
+- Identify sources of AI risk: bias, privacy leakage, hallucinations, sycophancy, pollution, non‑determinism
 
-Intro to AI. A look at natural language processing, how it works and how it can perpetuate bias and other risks.
+- Build and present an AI project scored on interesting, practical, and mindful
 
-### Module 4
+## How We’ll Work
 
-More advanced AI packages. From deep learning to image recognition to speech to text and beyond, we will make use of the concepts we learned in module 3.
+You can run everything in:
 
-### Module 5
+- GitHub Codespaces (recommended — zero setup)
 
-Optional material highlighting interfaces, and a chance for the teams to present their AI projects.
+- or your local machine (if you want to learn environments and pip)
 
-## AI project
+All exercises are in this repo.
 
-Individuals and teams are encouraged to present 5 to 10 minutes on AI at the end of the code-camp. This can involve building your own solutions, or critically reflecting on your experience with AI. 3 winners will be scored based on:
+Codespaces will install everything automatically from requirements.txt.\
 
-1. Mindfullness
-2. Practicality.
-3. Interesting.
+## Setting Up a Python Environment (Linux, macOS, Windows), for those not using Codespace
 
-## Common commands to remember
+Most of the course can be done in Codespaces, but if you want to run things locally, here’s the simplest way to set up a clean Python environment and install everything from requirements.txt.
 
-Making a virtual environment.
+1. Check Your Python Version
 
-`python3.12 -m venv hello_world_env`
+You need Python 3.10+.
 
-Remember to turn your virtual environment on!
+`python3 --version`
 
-`source hello_world_env/bin/activate`
-
-How to tell if it is on.
-
-You will see something like this in the terminal:
-
-`(hello_world_env_12) codydodd@LAPTOP-RLSD5OPF:~/lse-code-camp$`  Where the beginning of the line shows your virtual environment in brackets ().
-
-Check which version of python you are using. 
+or 
 
 `python --version`
 
-Installing packages - The recommended way:
+2. Create a Virtual Environment
 
-First, add your packages to a file called requirements.txt, then run in the terminal `pip install -r requirements.txt`
+A virtual environment keeps your project’s packages separate from the rest of your computer.
+This prevents version conflicts and keeps things reproducible.
 
-Installing packages - the less optimal way:
+Linux/Mac
+```
+python3 -m venv .lse_code_camp_environment
+source .lse_code_camp_environment/bin/activate
+```
 
-Without a requirements.txt you can install packages directly using `pip install <package name>`, but this makes it hard to remember what packages you have and even harder if you want to share your project.
+Windows (powershell)
+```
+python -m venv .venv
+.\.venv\Scripts\activate
+```
+
+When it is activated it should say:
+
+`(.lse_code_camp_environment) yourname@computer:~/project$`
+
+3. Install All Packages from requirements.txt
+
+Once your environment is activated:
+
+`pip install -r requirements.txt`
+
+### Other hints
+
+Windows users may have a better experience adding 'WLS2:ubuntu' to their machine. More information can be found: 
+
+WSL2 gives you:
+
+- A full Linux environment inside Windows
+
+- Much better compatibility with Python, ML libraries, and command‑line tools
+
+- Faster installs and fewer dependency issues
+
+- A clean separation between your system and your AI experiments
+
+- The same environment used in most research and production AI work
+
+Installation guide can be found here: https://learn.microsoft.com/windows/wsl/install
 
 
 
+## Running scripts
+
+`python your_script.py`
+
+
+## Experiments We’ll Run
+
+You’ll run a series of structured experiments designed to reveal the strengths and weaknesses of different AI systems.
+
+
+1. Computer Vision & Bias
+
+- Try cat‑face detection
+
+- See how CV models succeed or fail
+
+- Discuss bias, fairness, and “black cat vs white cat” issues
+
+
+2. Deterministic vs Generative — Diabetes Prediction
+
+- Run a deterministic Python model
+
+- Ask Copilot/Claude to predict the same data
+
+- Compare drift, pollution, and reproducibility
+
+- See why LLMs simulate math instead of doing math
+
+3. Drivers Analysis — Random Forest vs LLMs
+
+- Run a Random Forest to find top drivers
+
+- Ask LLMs to do the same
+
+- Observe everyone people → completeley different LLM answers
+
+- Understand hidden sampling parameters and non‑determinism
+
+4. Thematic Analysis — Dictionary vs ML vs LLM
+
+- Run a dictionary‑based classifier
+
+- Run naive ML
+
+- Run weighted ML (learns from human corrections)
+
+- Ask LLMs to tag the same data
+
+- Compare accuracy, cost, drift, and reliability
+
+5. Agents & Orchestration
+
+- See how Claude Agents run tools, code, and workflows
+
+- Compare agentic orchestration vs Python orchestration
+
+- Understand when to use each
+
+- Build hybrid systems
+
+## Final Showcase (Day 4)
+
+You’ll present an AI idea, prototype, or reflection.
+Projects are scored on:
+
+- Interesting — creative, novel, insightful
+
+- Practical — could actually work
+
+- Mindful — considers risk, governance, and impact
+
+You can work solo or in groups.
+You can use Python, LLMs, agents, or hybrids.
