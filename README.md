@@ -107,6 +107,10 @@ Installation guide can be found here: https://learn.microsoft.com/windows/wsl/in
 
 `python your_script.py`
 
+But in most cases they are inside a subfolder, so be sure to use:
+
+`python hello_world/hello_world.py`
+
 
 ## Experiments We’ll Run
 
