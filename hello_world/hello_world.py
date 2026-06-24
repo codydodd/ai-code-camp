@@ -21,7 +21,7 @@ print(f"My name is {name} and may age is {age}")
 
 # Functions are defined by a "def"  and a name and a () for feeding data, and INDENTS
 def greet(name):
-    print("I am printing AFTER lines 27") # Bonus, why does this print appears after line 27? 
+    #print("I am printing AFTER lines 27") # Bonus, why does this print appears after line 27? 
     print(f"Hello, {name}!")
 
 print("I am printing BEFORE lines 27")

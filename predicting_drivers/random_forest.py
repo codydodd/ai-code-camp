@@ -5,6 +5,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.inspection import permutation_importance
 from sklearn.metrics import r2_score, mean_absolute_error
 
+from datetime import datetime
+
 # ---------------------------------------------------------
 # 1. DATASET LOADERS — LOCAL FILES
 # ---------------------------------------------------------
@@ -71,7 +73,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 # ---------------------------------------------------------
 
 rf = RandomForestRegressor(
-    n_estimators=500,
+    n_estimators=10,
     random_state=42,
     n_jobs=-1
 )
@@ -129,7 +131,6 @@ driver_table = pd.DataFrame({
 
 print("\n=== COMBINED DRIVER TABLE (Ranked) ===")
 print(driver_table)
-
 
 
 
