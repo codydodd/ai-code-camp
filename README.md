@@ -181,3 +181,8 @@ Projects are scored on:
 
 You can work solo or in groups.
 You can use Python, LLMs, agents, or hybrids.
+
+
+# Post-event note:
+
+The datasets for predicting_themes were removed. New data will be uploaded before the next iteration.
